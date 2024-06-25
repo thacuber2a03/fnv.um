@@ -44,10 +44,10 @@ fn b64_1a*(input: []uint8): uint {
 }
 
 //~~ `[]char`/`str` aliases for the above
-fn b32s_1 *(input: []char): uint32 { return b32_1 ([]uint8(input))         }
-fn b32s_1a*(input: []char): uint32 { return b32_1a([]uint8(input))         }
-fn b64s_1 *(input: []char): uint   { return b64_1 ([]uint8(input))         }
-fn b64s_1a*(input: []char): uint   { return b64_1a([]uint8(input))         }
+fn b32s_1 *(input: []char): uint32 { return b32_1 ([]uint8(input)) }
+fn b32s_1a*(input: []char): uint32 { return b32_1a([]uint8(input)) }
+fn b64s_1 *(input: []char): uint   { return b64_1 ([]uint8(input)) }
+fn b64s_1a*(input: []char): uint   { return b64_1a([]uint8(input)) }
 //~~
 
 // I don't need toast for such a simple test suite
