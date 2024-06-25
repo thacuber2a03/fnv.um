@@ -1,0 +1,17 @@
+{
+	"name": "fnv",
+	"version": "v0.1.0",
+	"author": "@thacuber2a03",
+	"license": "Unlicense",
+	"description": "Fowler-Noll-Vo 1/a hashes for Umka",
+	"readme": "README.md",
+	"source": "https://github.com/thacuber2a03/fnv.um",
+	"dependencies": [
+		"umka",
+	],
+	"include": [
+		"fnv.um",
+	],
+	"run_posix": "./umbox/umka/umka fnv.um",
+	"run_windows": "./umbox/umka/umka.exe fnv.um"
+}
