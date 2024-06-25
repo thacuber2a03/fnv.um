@@ -1,6 +1,6 @@
 # fnv.um
 
-The 64-bit Fowler-Noll-Vo 1 and 1a hashes, implemented in [Umka](https://github.com/vtereshkov/umka-lang).
+The 32 and 64-bit Fowler-Noll-Vo 1 and 1a hashes, implemented in [Umka](https://github.com/vtereshkov/umka-lang).
 
 ## Installation
 
