@@ -1,10 +1,10 @@
 import "std.um"
 
 const (
-    FNV_OFFSET_BASIS_32* = uint32(0x811c9dc5)
-    FNV_PRIME_32* =        uint32(0x01000193)
+    FNV_OFFSET_BASIS_32* = uint32(0x00000000811c9dc5)
+    FNV_PRIME_32*        = uint32(0x0000000001000193)
     FNV_OFFSET_BASIS_64* = uint  (0xcbf29ce484222325)
-    FNV_PRIME_64* =        uint  (0x00000100000001B3)
+    FNV_PRIME_64*        = uint  (0x00000100000001B3)
 )
 
 //~~fn fnv::b32_1
@@ -53,8 +53,8 @@ fn b64s_1a*(input: []char): uint   { return b64_1a([]uint8(input)) }
 // I don't need toast for such a simple test suite
 fn main() {
     s := "hello world!"
-    std::assert(b32s_1 (s) == 0x8a01b99c        , sprintf("expected 8a01b99c, got %llx\n", b32s_1 (s)))
-    std::assert(b32s_1a(s) == 0xb034fff2        , sprintf("expected b034fff2, got %llx\n", b32s_1a(s)))
+    std::assert(b32s_1 (s) == 0x000000008a01b99c, sprintf("expected 8a01b99c, got %llx\n", b32s_1 (s)))
+    std::assert(b32s_1a(s) == 0x00000000b034fff2, sprintf("expected b034fff2, got %llx\n", b32s_1a(s)))
     std::assert(b64s_1 (s) == 0x58735284b97b86bc, sprintf("expected 58735284b97b86bc, got %llx\n", b64s_1 (s)))
     std::assert(b64s_1a(s) == 0x782ded88cd5a2672, sprintf("expected 782ded88cd5a2672, got %llx\n", b64s_1a(s)))
     printf("all tests passed :)\n")
